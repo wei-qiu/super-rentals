@@ -7,7 +7,7 @@
   {{/link-to}}
 </div>
 
-{{#each model as |rental|}}
+{{!-- {{#each model as |rental|}}
     <article class="listing">
         <h3>{{rental.title}}</h3>
         <div class="detail owner">
@@ -23,4 +23,7 @@
             <span>Number of bedrooms:</span> {{rental.bedrooms}}
         </div>
     </article>
+{{/each}} --}}
+{{#each model as |rentalUnit|}}
+    {{rental-listing rental=rentalUnit}}
 {{/each}}
